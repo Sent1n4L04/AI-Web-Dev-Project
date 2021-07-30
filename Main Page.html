@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+        <title>Ai keeping India fit</title>
+        <link rel="stylesheet" href="Project style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+        <script>
+            function test(){
+                var height = document.getElementById("height").value;
+                console.log(height);
+                var mass = document.getElementById("mass").value;
+                var BMI = mass/(height**2);
+                document.getElementById("output").innerHTML = String(BMI);               
+                console.log(BMI);
+            }
+        </script>
+    </head>
+    <body>
+        <section class = "Header">
+            <div class="Main">
+               <h1>AI</h1>
+               <p>Fitness Redefined.</p>
+            </div>
+        </section>
+        <section class="About" id="About" >
+                <h2>How AI maintains our fitness</h2>
+                <h3>Hey! The spider web of Artificial Intelligence has managed to trap a major portion of attention to it and it's forever expanding. It's omnipresent, we all use it. Be it as simple as a game of chess against your computer that you still struggle to win on easy mode or the ginormous labs and inventions of OsCorp industries in Spiderman movies, it's around you - whether you're the tech geek of your class or the clueless grandpa reciting the wars you served in at every family dinner.<br></h3>
+                <h3>Now, media has always strived to plant an obstinate thought in our head - technology makes you lazy. It might be true to a certain extent but the odds of the same are severely narrow, it's an underestimation of the true potential of technology. Being the tech-nerds we are, we decided the thought needed a make-over. Computer can think, it can act and it can instruct. This very project is nothing but a horizon where technology joins hands with health and gives you an e-friend that cares about you. We introduce to you, " Fit Bot" - your pal, advisor and the only fitness trainer that you certainly won't ignore, even on the leg day, trust me.</h3>
+        </section>
+        <section class="Test">
+            <div class= "Check">
+                <h1>Check your Body Mass Index</h1>
+                <form>
+                    <input type="text" id ="height" class="input-box" placeholder="  Enter you height(in meters)"><br>
+                    <input type="text" id="mass" class="input-box" placeholder="  Enter your mass" ><br>
+                    <button class="submit" onclick="test()">Submit</button>
+                    <h5> Your BMI is:</h5>
+                    </form>
+                    <h4 id = "output"></h4>
+            </div>
+        </section>
+        <section class="Category">
+            <h6>Choose your Category</h6>
+            <div class="row">
+                <a href="under/underweight.html" class="Col">Underweight<br>(<18.5)</a>
+                <a href="Average/average.html" class="Col">Average<br>(18.5-25)</a>
+                <a href="over/overweight.html" class="Col">Overweight<br>(>25)</a>
+            </div>
+        </section>
+    </body>
+</html>
