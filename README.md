@@ -1,2 +1,2 @@
 # AI-Web-Dev-Project
-For the competitition
+Fitness Redefined. Competition project on how AI helps in fitness.
